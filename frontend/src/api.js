@@ -29,7 +29,7 @@ export async function apiRequest(endpoint, options = {}) {
 
 export const api = {
   // Health
-  getHealth: () => apiRequest('/api/health'),
+  getHealth: () => apiRequest('/health'),
 
   // Auth
   login: (creds) => apiRequest('/api/auth/login', { method: 'POST', body: JSON.stringify(creds) }),
